@@ -1,5 +1,10 @@
 # Gnucash-CLI
 
+[![CI](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/ci.yml/badge.svg)](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/ci.yml)
+[![Release](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/release.yml/badge.svg)](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/release.yml)
+[![PyPI](https://img.shields.io/pypi/v/hep-gnucash-cli.svg)](https://pypi.org/project/hep-gnucash-cli/)
+[![Python](https://img.shields.io/pypi/pyversions/hep-gnucash-cli.svg)](https://pypi.org/project/hep-gnucash-cli/)
+
 `Gnucash-CLI` is the HEP command-line runtime for operating GnuCash books through the **official GnuCash engine**, not by directly editing SQL tables.
 
 The intended production path is:
@@ -32,6 +37,14 @@ cmake -DWITH_PYTHON=ON ...
 GnuCash's own docs warn that GnuCash is effectively single-writer; do not run this CLI while the GUI is editing the same book.
 
 ## Install
+
+From PyPI:
+
+```bash
+pipx install hep-gnucash-cli
+```
+
+For development:
 
 ```bash
 python -m pip install -e ".[dev]"
