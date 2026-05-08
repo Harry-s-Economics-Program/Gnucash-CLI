@@ -1,0 +1,11 @@
+{
+  "periods": 3,
+  "revenue_growth": 0.08,
+  "gross_margin": 0.42,
+  "opex_growth": 0.05,
+  "capex": 5000,
+  "working_capital_percent_revenue": 0.12,
+  "debt_change": 0,
+  "tax_rate": 0.21,
+  "owner_injections": 0
+}

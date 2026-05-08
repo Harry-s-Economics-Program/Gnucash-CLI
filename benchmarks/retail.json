@@ -1,0 +1,11 @@
+{
+  "industry": "retail",
+  "currency": "USD",
+  "metrics": {
+    "gross_margin": { "low": 0.28, "median": 0.36, "high": 0.48 },
+    "net_margin": { "low": 0.02, "median": 0.07, "high": 0.14 },
+    "current_ratio": { "low": 1.0, "median": 1.45, "high": 2.2 },
+    "debt_to_equity": { "low": 0.25, "median": 0.9, "high": 1.8 },
+    "opex_to_revenue": { "low": 0.18, "median": 0.28, "high": 0.42 }
+  }
+}

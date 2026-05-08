@@ -1,0 +1,29 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "hep-gnucash-cli"
+version = "0.1.0"
+description = "HEP AI-callable JSON CLI for the official GnuCash engine."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Harry's Economics Program" }]
+dependencies = [
+  "pydantic>=2.6.0"
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0.0"]
+
+[project.scripts]
+hep-gnucash = "gnucash_cli.cli:main"
+gnucash-agent = "gnucash_cli.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/gnucash_cli"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
