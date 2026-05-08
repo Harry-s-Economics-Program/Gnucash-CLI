@@ -2,8 +2,8 @@
 
 [![CI](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/ci.yml/badge.svg)](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/ci.yml)
 [![Release](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/release.yml/badge.svg)](https://github.com/Harry-s-Economics-Program/Gnucash-CLI/actions/workflows/release.yml)
-[![PyPI](https://img.shields.io/pypi/v/hep-gnucash-cli.svg)](https://pypi.org/project/hep-gnucash-cli/)
-[![Python](https://img.shields.io/pypi/pyversions/hep-gnucash-cli.svg)](https://pypi.org/project/hep-gnucash-cli/)
+[![PyPI](https://img.shields.io/pypi/v/gnucash-cli.svg)](https://pypi.org/project/gnucash-cli/)
+[![Python](https://img.shields.io/pypi/pyversions/gnucash-cli.svg)](https://pypi.org/project/gnucash-cli/)
 
 `Gnucash-CLI` is the HEP command-line runtime for operating GnuCash books through the **official GnuCash engine**, not by directly editing SQL tables.
 
@@ -41,7 +41,7 @@ GnuCash's own docs warn that GnuCash is effectively single-writer; do not run th
 From PyPI:
 
 ```bash
-pipx install hep-gnucash-cli
+pipx install gnucash-cli
 ```
 
 For development:
