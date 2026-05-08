@@ -26,6 +26,7 @@ class SessionOpenMode:
 
 
 BOOKS = {}
+SESSION_EVENTS = []
 
 
 class GncNumeric:
@@ -255,17 +256,21 @@ class Session:
         self.book = BOOKS.setdefault(uri, sample_book())
         self.saved = False
         self.ended = False
+        SESSION_EVENTS.append({"event": "open", "uri": uri, "mode": mode})
 
     def get_book(self):
         return self.book
 
     def save(self):
         self.saved = True
+        SESSION_EVENTS.append({"event": "save", "uri": self.uri, "mode": self.mode})
 
     def end(self):
         self.ended = True
+        SESSION_EVENTS.append({"event": "end", "uri": self.uri, "mode": self.mode})
 
     def destroy(self):
+        SESSION_EVENTS.append({"event": "destroy", "uri": self.uri, "mode": self.mode})
         return None
 
 
